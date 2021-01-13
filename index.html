@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>nihao</title>
+    <script>
+        window.$ = window.jQuery = require("./js/jquery.min.js");
+    </script>
+    <script src="./bootstrap/js/bootstrap.min.js"></script>
+    <link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="menu_file">
+        <button class="btn output_btn">输出设置</button>
+        <button class="btn color_btn">颜色</button>
+        <button class="btn" id="help_btn">help</button>
+        <button type="button" class="btn" id="git_btn">B</button>
+        <button type="button" class="btn" id="picture_btn">图片</button>
+
+        <button class="btn" id="close_btn" style="float: right; margin: 2px 5px 0 0;">关闭</button>
+        <button class="btn" id="max_btn" style="float: right; margin: 2px 5px 0 0;">最大化</button>
+        <button class="btn" id="min_btn" style="float: right; margin: 2px 5px 0 0;">最小化</button>
+    </div>
+    <div class="model_area"></div>
+    <div class="fun_area">
+        <div class="can_area">
+            <div class="can_menu"></div>
+            <canvas id="can"></canvas>
+        </div>
+        <div class="fun_c">
+            <div class="btn_menu">
+                <button type="button" class="btn" id="start_btn">开始</button>
+                <button type="button" class="btn stop_btn">停止</button>
+                <button type="button" class="btn clear_btn">清屏</button>
+            </div>
+        </div>
+        <div class="code_area_main">
+            <div class="code_area"></div>
+        </div>
+    </div>
+    <script src="./js/model.js"></script>
+    <script src="./js/can.js"></script>
+    <script src="./js/data.js"></script>
+    <script src="./renderer.js"></script>
+    <script src="./js/list.js"></script>
+</body>
+
+</html>
