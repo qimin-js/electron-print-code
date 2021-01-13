@@ -1,3 +1,3 @@
-cd list
+cd list /n
 cnpm install
 electron .
